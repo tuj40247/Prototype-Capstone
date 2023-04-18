@@ -54,6 +54,7 @@
             transition: 0.3s
         }
             .checkCoursesButton:hover {
+                color: white;
                 cursor: pointer;
                 transform: scale(1.05);
             }
@@ -130,8 +131,8 @@
                     </label>
                 </div>
                 <div class="genedDescriptionButtonsDiv">
-                    <button runat="server" id="btnCheckCourses" class="checkCoursesButton">Check Courses</button>
-                    <button runat="server" id="btnLearnMore" class="learnMoreButton">Learn More</button>
+                    <a class="btn checkCoursesButton" href="Discover.aspx" role="button">Check Courses</a>
+                    <a class="btn learnMoreButton" href="https://bulletin.temple.edu/undergraduate/general-education/" role="button">Learn More</a>
                 </div>
             </div>
             <div class="genedAreaDiv">

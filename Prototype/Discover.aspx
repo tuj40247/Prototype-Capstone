@@ -8,7 +8,6 @@
         .navbar {
             display: flex;
             justify-content: space-between;
-            padding: 20px 75px 0px 75px;
         }
         .templeHomeLink {
             color: firebrick;
