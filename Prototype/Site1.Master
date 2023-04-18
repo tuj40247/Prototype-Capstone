@@ -42,7 +42,7 @@
             </div>
             <div>
                 <a class="navLinks" href="Home.aspx">Home</a>
-                <a class="navLinks" href="#Discover">Discover Courses</a>
+                <a class="navLinks" href="Discover.aspx">Discover Courses</a>
             </div>
         </nav>
         <div>
