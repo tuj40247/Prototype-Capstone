@@ -1,12 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Prototype.Home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
+        html {
+            height: 100%;
+        }
         body {
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
             background-image: url(https://news.temple.edu/sites/news/files/styles/article_hero/public/20210408_aerialsrsb_001-high_res_jpeg_300_dpi-high_res_jpeg_300_dpi.jpg?itok=uuPhlp3y&c=6269c6cbdeda66d3556a6a2d55799a08);
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
             background-size: cover;
+            backdrop-filter: blur(2px)brightness(60%);
         }
         .genedDescriptionDiv {
             display: flex;

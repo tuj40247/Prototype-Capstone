@@ -91,7 +91,15 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        
+        <nav class="navbar">
+            <div>
+                <label class="templeHomeLink">Temple University</label>
+            </div>
+            <div>
+                <a class="navLinks" href="Home.aspx">Home</a>
+                <a class="navLinks" href="#DiscoverCourses">Discover Courses</a>
+            </div>
+        </nav>
         <div class="titleDiv">
             <div style="display: flex; flex-direction: column">
                 <label class="title">Discover Courses</label>

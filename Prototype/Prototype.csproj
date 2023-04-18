@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CourseDescription.aspx" />
+    <Content Include="Discover.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="Img\astro res.jpg" />
@@ -87,6 +88,13 @@
     </Compile>
     <Compile Include="CourseDescription.aspx.designer.cs">
       <DependentUpon>CourseDescription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Discover.aspx.cs">
+      <DependentUpon>Discover.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Discover.aspx.designer.cs">
+      <DependentUpon>Discover.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
