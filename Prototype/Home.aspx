@@ -68,6 +68,7 @@
             transition: 0.3s;
         }
             .learnMoreButton:hover {
+                color: ghostwhite;
                 cursor: pointer;
                 transform: scale(1.05);
             }

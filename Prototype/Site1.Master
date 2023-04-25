@@ -31,6 +31,13 @@
             text-decoration: none;
             margin-left: 70px;
         }
+            .navLinks:hover {
+                color: firebrick;
+                font-family: 'Poppins', sans-serif;
+                font-size: 24px;
+                text-decoration: none;
+                margin-left: 70px;
+            }
     </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
