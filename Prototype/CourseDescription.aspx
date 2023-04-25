@@ -1,240 +1,176 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="CourseDescription.aspx.cs" Inherits="Prototype.CourseDescription" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .newStyle1 {
-            font-family: "Times New Roman", Times, serif;
-            font-size: large;
+        .navbar {
+            display: flex;
+            justify-content: space-between;
         }
-        .newStyle2 {
-            font-family: "times New Roman", Times, serif;
-            font-size: medium;
-            font-weight: bold;
-            font-style: normal;
-            font-variant: small-caps;
+        .templeHomeLink {
+            color: firebrick;
+            font-family: 'Poppins', sans-serif;
+            font-size: 38px;
+            font-weight: 400;
         }
-        .newStyle3 {
-            font-family: "times New Roman", Times, serif;
+        .navLinks {
+            color: firebrick;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            text-decoration: none;
         }
-        .newStyle4 {
-            font-family: "times New Roman", Times, serif;
-            font-size: xx-large;
-            color: #B22222;
-            font-weight: bolder;
-            font-style: oblique;
+            .navLinks:hover {
+                opacity: 0.6;
+            }
+        .description {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
-        .newStyle5 {
-            font-family: "times New Roman", Times, serif;
-            font-size: xx-large;
-            font-weight: bold;
-            font-style: normal;
-            color: #B22222;
-        }
-        .newStyle6 {
-            font-family: "times New Roman", Times, serif;
-            font-size: large;
-            font-weight: lighter;
-            font-style: normal;
-            font-variant: small-caps;
-            color: #B22222;
-        }
-        .newStyle7 {
-            font-family: "times New Roman", Times, serif;
-            font-size: xx-large;
-            font-weight: bold;
-            font-style: normal;
-        }
-        .newStyle8 {
-            font-family: "times New Roman", Times, serif;
-            font-size: small;
-            font-style: normal;
-            font-variant: small-caps;
-            color: #B22222;
-        }
-        .newStyle9 {
-            font-family: "times New Roman", Times, serif;
-            font-size: small;
-            font-weight: normal;
-            font-style: normal;
-            font-variant: small-caps;
+        .picture {
+            background-image: url('');
+            background-size: cover;
+            height: 300px;
+            border-radius: 10px;
         }
         .auto-style1 {
-            z-index: 1;
-            left: 415px;
-            top: 549px;
+            width: 315px;
+            height: 34px;
             position: absolute;
+            top: 256px;
+            left: 164px;
+            z-index: 1;
+            margin-right: 2px;
         }
         .auto-style2 {
-            z-index: 1;
-            left: 81px;
-            top: 546px;
-            position: absolute;
+            left: 0px;
+            top: 3px;
         }
         .auto-style3 {
-            position: absolute;
-            top: 608px;
-            left: 245px;
-            z-index: 1;
-            width: 228px;
-            height: 203px;
+            position: relative;
+            left: 531px;
+            top: 11px;
+            width: 148px;
         }
         .auto-style4 {
-            z-index: 1;
-            left: 280px;
-            top: 218px;
             position: absolute;
-        }
-        .auto-style5 {
-            font-family: "times New Roman", Times, serif;
-            font-size: large;
-            font-weight: lighter;
-            font-style: normal;
-            font-variant: small-caps;
-            color: #B22222;
+            top: 95px;
+            left: 182px;
             z-index: 1;
-            left: 514px;
-            top: 332px;
-            position: absolute;
-            width: 61px;
         }
-        .auto-style6 {
-            width: 98%;
-            height: 175px;
-        }
-        .auto-style7 {
-            font-family: "times New Roman", Times, serif;
-            font-size: small;
-            font-weight: normal;
-            font-style: normal;
-            font-variant: small-caps;
-            z-index: 1;
-            left: 1299px;
-            top: 23px;
-            position: absolute;
-            width: 171px;
-            height: 36px;
-        }
-        .auto-style8 {
-            font-family: "times New Roman", Times, serif;
-            font-size: small;
-            font-style: normal;
-            font-variant: small-caps;
-            color: #B22222;
-            z-index: 1;
-            left: 1070px;
-            top: 24px;
-            position: absolute;
-            width: 74px;
-            height: 25px;
-        }
-        .auto-style9 {
-            font-family: "times New Roman", Times, serif;
-            font-size: xx-large;
+        .newStyle1 {
             font-weight: bold;
-            font-style: normal;
-            z-index: 1;
-            left: 77px;
-            top: 26px;
-            position: absolute;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            color: #BD2130;
         }
-        .auto-style10 {
-            font-family: "times New Roman", Times, serif;
+        .newStyle2 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #BD2130;
+        }
+        .newStyle3 {
+            font-weight: normal;
+            color: #C82333;
+            z-index: 1;
+            left: 382px;
+            top: 285px;
+            position: absolute;
+            width: 101px;
+        }
+        .newStyle4 {
             font-size: medium;
             font-weight: bold;
-            font-style: normal;
-            font-variant: small-caps;
             z-index: 1;
-            left: 263px;
-            top: 282px;
+            left: 140px;
+            top: 430px;
             position: absolute;
         }
-        .auto-style11 {
-            font-family: "times New Roman", Times, serif;
-            font-size: xx-large;
+        .newStyle5 {
             font-weight: bold;
-            font-style: normal;
-            color: #B22222;
+            font-size: medium;
             z-index: 1;
-            left: 87px;
-            top: 316px;
+            left: 364px;
+            top: 425px;
             position: absolute;
-            width: 353px;
+        }
+        .newStyle6 {
+            font-size: medium;
+            font-weight: bold;
         }
         .auto-style12 {
             z-index: 1;
-            left: 83px;
-            top: 476px;
+            left: 73px;
+            top: 516px;
             position: absolute;
+        }
+        .newStyle7 {
+            font-size: medium;
+            font-weight: bold;
         }
         .auto-style13 {
             z-index: 1;
-            left: 417px;
-            top: 473px;
+            left: 518px;
+            top: 515px;
             position: absolute;
-        }
-        .newStyle10 {
-            font-family: "times New Roman", Times, serif;
-            font-size: medium;
-            color: #B22222;
-            font-weight: normal;
-            font-style: normal;
-            text-decoration: underline;
         }
         .auto-style14 {
-            font-family: "times New Roman", Times, serif;
-            font-size: medium;
-            color: #B22222;
-            font-weight: normal;
-            font-style: normal;
-            text-decoration: underline;
-            position: absolute;
-            top: 295px;
-            left: 1066px;
+            width: 182px;
+            height: 149px;
             z-index: 1;
+            left: 294px;
+            top: 603px;
+            position: absolute;
         }
         .auto-style15 {
-            position: absolute;
-            top: 351px;
-            left: 837px;
+            font-weight: bold;
+            font-size: medium;
             z-index: 1;
-            width: 598px;
-            height: 455px;
+            left: 333px;
+            top: 329px;
+            position: absolute;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="background-color: #fff; text-align: left; color:firebrick;
-        font-family: Arial; padding: 10px; font-size: 28px;" class="auto-style6">
-        <asp:Label ID="Label1" runat="server" Text="Temple University" style="font-size: xx-large;" CssClass="auto-style9"></asp:Label>
-            <asp:Label ID="Label3" runat="server" style="font-size: large; text-decoration: underline;" Text="Home" CssClass="auto-style8"></asp:Label>
-            <div style="text-align:center">
-                <asp:Button ID="Button1" runat="server" Text="Back To Search" BackColor="White" CssClass="auto-style4" />
-            <asp:Label ID="Label4" runat="server" style="margin-left: 1px; font-size: large; text-decoration: underline;" Text="Discover " CssClass="auto-style7"></asp:Label>
+    <div>
+        <div class="container">
+        <div class="row">
+            <div class="auto-style2">
             </div>
+            <div class="col-md-6">
+                <div class="picture">
+                    <asp:Button ID="Button1" runat="server" BackColor="White" BorderColor="#CC0000" BorderStyle="Ridge" CssClass="auto-style3" OnClick="Button1_Click" Text="Back to Search" />
+                    <asp:Label ID="Label1" runat="server" CssClass="auto-style4" Text="Science and Technology"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" CssClass="newStyle3" Text="PHYS 1004"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" CssClass="auto-style15" Text="Professor: XXX"></asp:Label>
+                </div>
             </div>
-        <p>
-            <asp:Label ID="schoolOfLbl" runat="server" CssClass="auto-style10" Text="Science &amp; Technology"></asp:Label>
-        </p>
-        <p>
-            <asp:Label ID="Label5" runat="server" CssClass="auto-style11" style="text-align: left" Text="Introduction to Astronomy"></asp:Label>
-            <asp:Label ID="Label11" runat="server" CssClass="auto-style14" Text="Course Description:"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style15">Course deLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</asp:TextBox>
-        </p>
-        <p>
-            <asp:Label ID="Label7" runat="server" CssClass="auto-style12" Text="Offered: Fall, Spring"></asp:Label>
-            <asp:Label ID="Label6" runat="server" CssClass="auto-style5" Text="PHYS: 1004"></asp:Label>
-        </p>
-        <p>
-            <asp:Label ID="Label8" runat="server" CssClass="auto-style13" Text="Professor: XXXXX"></asp:Label>
-            <asp:Label ID="Label9" runat="server" CssClass="auto-style2" Text="Delivery Method: Online"></asp:Label>
-        </p>
-        <asp:Label ID="Label10" runat="server" CssClass="auto-style1" Text="Meeting Days:"></asp:Label>
-        <p>
-            &nbsp;</p>
-        <p>
-            <asp:Image ID="Image1" runat="server" CssClass="auto-style3" ImageUrl="~/Img/astro res.jpg" />
-        </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-8">
+                <div class="description text-center">
+                    <p>Course description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div>
+            <h2 class="auto-style1"><span class="newStyle2">Introduction to Astronomy</span></h2>
+            <p>
+                <asp:Label ID="Label3" runat="server" CssClass="newStyle4" Text="Offered:  XXX"></asp:Label>
+            </p>
+            <asp:Label ID="Label5" runat="server" CssClass="newStyle6 auto-style12" Text="Delivery Method: XXX"></asp:Label>
+            <asp:Label ID="Label6" runat="server" CssClass="newStyle7 auto-style13" Text="Meeting Days: XXX"></asp:Label>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+        </div>
+    <img alt="" border="0" class="auto-style14" src="Img/astro%20res.jpg" />
+    </div>
 </asp:Content>

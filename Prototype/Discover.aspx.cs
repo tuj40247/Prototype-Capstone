@@ -13,5 +13,10 @@ namespace Prototype
         {
 
         }
+
+        protected void btnViewClass_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("CourseDescription.aspx");
+        }
     }
 }

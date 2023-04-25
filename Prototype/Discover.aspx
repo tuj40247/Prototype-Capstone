@@ -21,6 +21,9 @@
             font-size: 24px;
             text-decoration: none;
         }
+            .navLinks:hover {
+                opacity: 0.6;
+            }
         .discoverTitle {
             color: black;
             font-family: 'Poppins', sans-serif;
@@ -80,6 +83,22 @@
                     color: firebrick;
                     cursor: pointer;
                 }
+        .container {
+            padding: 2rem 0rem;
+        }
+
+        h4 {
+            margin: 2rem 0rem 1rem;
+        }
+
+        .table-image {
+            td, th
+
+        {
+            vertical-align: middle;
+        }
+
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -124,22 +143,76 @@
                 <asp:ListItem>Online Meetings</asp:ListItem>
             </asp:DropDownList>
         </div>
+    <div class="container">
+      <!-- Table -->
+      <div class="table-responsive" >
+      <table class="table table-fit mt-5 table-light table-striped" >
+        <thead>
+          <tr>
+            <th scope="col">CRN</th>
+            <th scope="col">Course Title</th>
+            <th scope="col">Meeting Days</th>
+            <th scope="col">Professor</th>
+            <th scope="col">View Course</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1022</th>
+            <td>Introduction to Astronomy</td>
+            <td>MWF</td>
+            <td>xxx</td>
+            <td >
+              <div class="d-flex flex-row  mb-3">
+                <div ><button runat="server" type="button" class="btn" id="btnViewCourse" onserverclick="btnViewClass_ServerClick">
+                  <i class="material-icons text-warning">edit</i>
+                </button></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">9914</th>
+            <td>Example Science GenEd</td>
+            <td>TTH</td>
+            <td>xxx</td>
+            <td >
+              <div class="d-flex flex-row mb-3">
+                <div ><button type="button" class="btn"> 
+                  <i class="material-icons text-warning">edit</i>
+                </button></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5561</th>
+            <td>Example Race and Diversity GenEd</td>
+            <td>MWF</td>
+            <td>xxx</td>
+            <td >
+              <div class="d-flex flex-row mb-3">
+                <div ><button type="button" class="btn">
+                  <i class="material-icons text-warning">edit</i>
+                </button></div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-        <div>
-            
-            <div style ="text-align:left; font-size: 15px ">
-                <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-                <asp:Label ID="Label2" runat="server" Text="Featured Courses:"></asp:Label>
-            </div>
-            <div style ="text-align:center"> 
-                <asp:Image ID="Image1" runat="server" ImageUrl="~/Img/physics res.jpg" />
-                <asp:Image ID="Image2" runat="server" ImageUrl="~/Img/chem res.jpg" />
-                <asp:Image ID="Image3" runat="server" ImageUrl="~/Img/botany res.jpg" />
-                <asp:Image ID="Image4" runat="server" ImageUrl="~/Img/comp res.jpg" />
-                <asp:Image ID="Image5" runat="server" ImageUrl="~/Img/astro res.jpg" />
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
-
-            </div>
-            </div>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </asp:Content>
